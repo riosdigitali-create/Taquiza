@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Taquizas para Eventos Tijuana | Bodas, XV Años y Eventos Corporativos</title>
+<meta name="description" content="Taquizas para eventos en Tijuana, Mexicali, Ensenada, Rosarito y Tecate. Catering mexicano de autor para bodas, XV años, empresas y cumpleaños. Cotiza tu evento por WhatsApp.">
+<link rel="canonical" href="https://www.taquizasparaeventos.mx/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a0a0a">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Taquizas para Eventos | Catering Mexicano de Autor en Tijuana">
+<meta property="og:description" content="Las mejores taquizas para bodas, XV años, empresas y cumpleaños. Cobertura en Tijuana, Mexicali, Ensenada, Rosarito y Tecate.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1768806470347-0d336287d6b8?auto=format&fit=crop&w=1200&q=80">
+<meta property="og:locale" content="es_MX">
+<meta property="og:url" content="https://www.taquizasparaeventos.mx/">
+<meta property="og:site_name" content="Taquizas para Eventos">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Taquizas para Eventos | Catering Mexicano de Autor en Tijuana">
+<meta name="twitter:description" content="Bodas, XV años, empresas y cumpleaños. Taquizas de autor con cobertura en Baja California. Cotiza por WhatsApp.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1768806470347-0d336287d6b8?auto=format&fit=crop&w=1200&q=80">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/favicon.png">
+
+<!-- Stylesheet (production Tailwind build) -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- JSON-LD LocalBusiness / FoodEstablishment -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "Taquizas para Eventos",
+  "image": "https://images.unsplash.com/photo-1768806470347-0d336287d6b8?auto=format&fit=crop&w=1200&q=80",
+  "telephone": "+52 664 437 5224",
+  "priceRange": "$$",
+  "servesCuisine": "Mexicana",
+  "areaServed": [
+    { "@type": "City", "name": "Tijuana" },
+    { "@type": "City", "name": "Mexicali" },
+    { "@type": "City", "name": "Ensenada" },
+    { "@type": "City", "name": "Rosarito" },
+    { "@type": "City", "name": "Tecate" },
+    { "@type": "Place", "name": "Playas de Tijuana" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tijuana",
+    "addressRegion": "Baja California",
+    "addressCountry": "MX"
+  },
+  "url": "https://www.taquizasparaeventos.mx/"
+}
+</script>
+</head>
+<body class="overflow-x-hidden bg-bg-black text-smoke">
+
+<!-- ================= LOADER ================= -->
+<div id="loader" class="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-bg-black">
+  <div class="font-heading text-2xl font-semibold tracking-[-0.02em] text-white">TAQUIZAS<span class="text-gold">.</span></div>
+  <div class="mt-6 h-[1px] w-40 overflow-hidden bg-white/10">
+    <div id="loaderBar" class="loader-progress"></div>
+  </div>
+  <p class="mt-4 text-[11px] uppercase tracking-[0.3em] text-white/40">Preparando el fuego</p>
+</div>
+
+<!-- ================= NAV ================= -->
+<header id="siteNav" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
+  <div class="container-px flex items-center justify-between py-5">
+    <a href="#hero" class="font-heading text-lg font-semibold tracking-tight text-white">TAQUIZAS<span class="text-gold">.</span></a>
+    <nav class="hidden items-center gap-8 text-[12px] font-semibold uppercase tracking-[0.14em] text-white/80 lg:flex">
+      <a class="magnetic transition-colors hover:text-gold" href="#servicios">Servicios</a>
+      <a class="magnetic transition-colors hover:text-gold" href="#menu">Menú</a>
+      <a class="magnetic transition-colors hover:text-gold" href="#galeria">Galería</a>
+      <a class="magnetic transition-colors hover:text-gold" href="#cobertura">Cobertura</a>
+      <a class="magnetic transition-colors hover:text-gold" href="#cotizador">Cotizador</a>
+      <a class="magnetic transition-colors hover:text-gold" href="#contacto">Contacto</a>
+    </nav>
+    <a href="https://wa.me/526644375224" data-wa-msg="Hola, me gustaria recibir informacion sobre sus taquizas para eventos." class="js-wa-cta magnetic btn-premium hidden sm:inline-flex" target="_blank" rel="noopener">
+      Contactar Ahora
+    </a>
+    <button id="navToggle" aria-label="Abrir menú" class="flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden">
+      <span class="h-px w-6 bg-white"></span>
+      <span class="h-px w-6 bg-white"></span>
+    </button>
+  </div>
+  <nav id="mobileNav" class="hidden flex-col gap-1 border-t border-white/10 bg-bg-black/95 px-6 py-4 backdrop-blur-xl lg:hidden">
+    <a class="py-3 text-sm uppercase tracking-wide text-white/80" href="#servicios">Servicios</a>
+    <a class="py-3 text-sm uppercase tracking-wide text-white/80" href="#menu">Menú</a>
+    <a class="py-3 text-sm uppercase tracking-wide text-white/80" href="#galeria">Galería</a>
+    <a class="py-3 text-sm uppercase tracking-wide text-white/80" href="#cobertura">Cobertura</a>
+    <a class="py-3 text-sm uppercase tracking-wide text-white/80" href="#cotizador">Cotizador</a>
+    <a class="py-3 text-sm uppercase tracking-wide text-white/80" href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="hero" class="relative flex h-[100svh] min-h-[640px] w-full items-end overflow-hidden bg-bg-black">
+  <div id="kenburns" class="absolute inset-0 z-0">
+    <img src="https://images.unsplash.com/photo-1768806470347-0d336287d6b8?auto=format&fit=crop&w=1920&q=80" alt="Trompo de tacos al pastor girando junto al fuego, catering para eventos en Tijuana" class="kb-slide absolute inset-0 h-full w-full object-cover opacity-100" fetchpriority="high">
+    <img src="https://images.unsplash.com/photo-1570481060336-9c82d078588e?auto=format&fit=crop&w=1920&q=80" alt="Carne asándose a la parrilla con llamas para una taquiza de evento" class="kb-slide absolute inset-0 h-full w-full object-cover opacity-0" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1665607437981-973dcd6a22bb?auto=format&fit=crop&w=1920&q=80" alt="Montaje de banquete elegante para boda con catering mexicano" class="kb-slide absolute inset-0 h-full w-full object-cover opacity-0" loading="lazy">
+  </div>
+  <div class="absolute inset-0 z-[1] bg-gradient-to-t from-bg-black via-bg-black/50 to-bg-black/30"></div>
+  <div class="absolute inset-0 z-[1] bg-gradient-to-r from-bg-black/60 via-transparent to-bg-black/40"></div>
+
+  <div class="container-px relative z-10 w-full pb-20 pt-40 sm:pb-28">
+    <p class="label-eyebrow mb-6 opacity-0" data-hero-fade>Taquizas de autor · Baja California</p>
+    <h1 class="font-heading max-w-5xl text-[13vw] font-semibold leading-[0.95] tracking-[-0.03em] text-white sm:text-[9vw] lg:text-[6.4vw]" id="heroTitle">
+      Las mejores taquizas para eventos.
+    </h1>
+    <p class="mt-8 max-w-xl text-base text-white/70 opacity-0 sm:text-lg" data-hero-fade>
+      Fuego, sabor y precisión para bodas, XV años, empresas y celebraciones en Tijuana, Mexicali, Ensenada, Rosarito y Tecate.
+    </p>
+    <div class="mt-10 flex flex-wrap items-center gap-5 opacity-0" data-hero-fade>
+      <a href="https://wa.me/526644375224" data-wa-msg="Hola, quiero solicitar una cotizacion para mi evento." class="js-wa-cta magnetic btn-ember" target="_blank" rel="noopener">
+        Solicitar Cotización
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+      </a>
+      <a href="#servicios" class="magnetic btn-premium-outline">Ver Servicios</a>
+    </div>
+  </div>
+
+  <button id="scrollIndicator" aria-label="Desplázate" class="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-white/60">
+    <div class="flex h-10 w-6 items-start justify-center rounded-full border border-white/30 p-1.5">
+      <span id="scrollDot" class="h-1.5 w-1.5 rounded-full bg-gold"></span>
+    </div>
+  </button>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="relative border-y border-white/10 bg-carbon py-16">
+  <div class="container-px grid grid-cols-2 gap-8 lg:grid-cols-4">
+    <div class="text-center lg:text-left">
+      <div class="stat-number"><span data-count="500">0</span>+</div>
+      <p class="mt-2 text-[12px] uppercase tracking-[0.16em] text-white/50">Eventos realizados</p>
+    </div>
+    <div class="text-center lg:text-left">
+      <div class="stat-number"><span data-count="30000">0</span>+</div>
+      <p class="mt-2 text-[12px] uppercase tracking-[0.16em] text-white/50">Invitados servidos</p>
+    </div>
+    <div class="text-center lg:text-left">
+      <div class="stat-number"><span data-count="100">0</span>%</div>
+      <p class="mt-2 text-[12px] uppercase tracking-[0.16em] text-white/50">Ingredientes frescos</p>
+    </div>
+    <div class="text-center lg:text-left">
+      <div class="stat-number"><span data-count="5">0</span>★</div>
+      <p class="mt-2 text-[12px] uppercase tracking-[0.16em] text-white/50">Calificación promedio</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOSOTROS ================= -->
+<section id="nosotros" class="container-px py-28 sm:py-36">
+  <div class="grid gap-16 lg:grid-cols-12 lg:gap-12">
+    <div class="lg:col-span-5">
+      <p class="label-eyebrow mb-5">Nuestra historia</p>
+      <h2 class="font-heading text-4xl font-semibold leading-[1.05] tracking-[-0.02em] text-white sm:text-5xl">
+        Cocinamos como si cada evento fuera el nuestro.
+      </h2>
+      <p class="mt-6 text-white/65">
+        Nacimos en Tijuana con una idea simple: llevar el sabor de la taquería de barrio a la mesa de los eventos más importantes de tu vida. Más de una década después, seguimos encendiendo el trompo con la misma disciplina del primer día.
+      </p>
+      <p class="mt-4 text-white/65">
+        Nuestro equipo de taqueros, parrilleros y meseros trabaja con un solo objetivo: que tú disfrutes tu evento mientras nosotros cuidamos cada detalle, desde el montaje hasta el último taco servido.
+      </p>
+      <div class="mt-10 flex items-center gap-6">
+        <div class="rule-gold"></div>
+        <p class="text-sm text-white/50">Desde 2013 · Baja California</p>
+      </div>
+      <a href="https://wa.me/526644375224" data-wa-msg="Hola, me gustaria conocer mas sobre su equipo y su experiencia en eventos." class="js-wa-cta magnetic btn-premium-outline mt-10 inline-flex" target="_blank" rel="noopener">Contáctanos</a>
+    </div>
+    <div class="relative lg:col-span-7">
+      <div class="grid grid-cols-5 gap-4">
+        <div class="reveal-img col-span-3 overflow-hidden rounded-2xl">
+          <div class="mask-reveal h-full w-full">
+            <img src="https://images.unsplash.com/photo-1763951719324-d1ff7eff0f7b?auto=format&fit=crop&w=1200&q=80" alt="Chef preparando tacos artesanales para un evento privado" loading="lazy" class="h-full w-full object-cover" style="aspect-ratio:4/5">
+          </div>
+        </div>
+        <div class="reveal-img col-span-2 mt-10 overflow-hidden rounded-2xl">
+          <div class="mask-reveal h-full w-full">
+            <img src="https://images.unsplash.com/photo-1600728256404-aaa448921ad9?auto=format&fit=crop&w=1200&q=80" alt="Mesa de salsas y guacamole recién preparado para taquiza de evento" loading="lazy" class="h-full w-full object-cover" style="aspect-ratio:4/5">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICIOS ================= -->
+<section id="servicios" class="border-t border-white/10 bg-carbon py-28 sm:py-36">
+  <div class="container-px">
+    <div class="mb-16 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+      <div>
+        <p class="label-eyebrow mb-5">Lo que hacemos</p>
+        <h2 class="font-heading max-w-xl text-4xl font-semibold leading-[1.05] tracking-[-0.02em] text-white sm:text-5xl">
+          Un servicio para cada celebración.
+        </h2>
+      </div>
+      <p class="max-w-sm text-white/55">Adaptamos el montaje, el menú y el equipo humano al tamaño y estilo de tu evento.</p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4" id="serviciosGrid">
+      <article class="reveal-card card-lift group overflow-hidden rounded-2xl bg-bg-black">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1561593367-66c79c2294e6?auto=format&fit=crop&w=1200&q=80" alt="Taquiza elegante para boda con montaje premium" loading="lazy" class="h-64 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+        </div>
+        <div class="p-6">
+          <h3 class="font-heading text-lg font-semibold text-white">Bodas</h3>
+          <p class="mt-2 text-sm text-white/55">La taquiza que cierra la noche perfecta, con estilo y sabor de autor.</p>
+        </div>
+      </article>
+      <article class="reveal-card card-lift group overflow-hidden rounded-2xl bg-bg-black">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1763625645366-b12410f63f6a?auto=format&fit=crop&w=1200&q=80" alt="Catering de taquiza para fiesta de XV años" loading="lazy" class="h-64 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+        </div>
+        <div class="p-6">
+          <h3 class="font-heading text-lg font-semibold text-white">XV Años</h3>
+          <p class="mt-2 text-sm text-white/55">Montajes vibrantes pensados para la quinceañera y sus invitados.</p>
+        </div>
+      </article>
+      <article class="reveal-card card-lift group overflow-hidden rounded-2xl bg-bg-black">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1200&q=80" alt="Servicio de taquiza para evento corporativo" loading="lazy" class="h-64 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+        </div>
+        <div class="p-6">
+          <h3 class="font-heading text-lg font-semibold text-white">Empresas</h3>
+          <p class="mt-2 text-sm text-white/55">Eventos corporativos con servicio ágil, limpio y profesional.</p>
+        </div>
+      </article>
+      <article class="reveal-card card-lift group overflow-hidden rounded-2xl bg-bg-black">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1758275557553-0c46c061d43e?auto=format&fit=crop&w=1200&q=80" alt="Taquiza para fiesta de cumpleaños" loading="lazy" class="h-64 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+        </div>
+        <div class="p-6">
+          <h3 class="font-heading text-lg font-semibold text-white">Cumpleaños</h3>
+          <p class="mt-2 text-sm text-white/55">Del cumpleaños infantil al gran aniversario, con el mismo cuidado.</p>
+        </div>
+      </article>
+      <article class="reveal-card card-lift group overflow-hidden rounded-2xl bg-bg-black">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1699730185428-d11054059c7f?auto=format&fit=crop&w=1200&q=80" alt="Taquiza para fiesta de graduación" loading="lazy" class="h-64 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+        </div>
+        <div class="p-6">
+          <h3 class="font-heading text-lg font-semibold text-white">Graduaciones</h3>
+          <p class="mt-2 text-sm text-white/55">Celebra el logro con una taquiza a la altura del esfuerzo.</p>
+        </div>
+      </article>
+      <article class="reveal-card card-lift group overflow-hidden rounded-2xl bg-bg-black">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1576842546422-60562b9242ae?auto=format&fit=crop&w=1200&q=80" alt="Taquiza para bautizo y celebración familiar" loading="lazy" class="h-64 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+        </div>
+        <div class="p-6">
+          <h3 class="font-heading text-lg font-semibold text-white">Bautizos</h3>
+          <p class="mt-2 text-sm text-white/55">Reuniones familiares íntimas con sabor a comida casera de fiesta.</p>
+        </div>
+      </article>
+      <article class="reveal-card card-lift group overflow-hidden rounded-2xl bg-bg-black">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1653821355736-0c2598d0a63e?auto=format&fit=crop&w=1200&q=80" alt="Taquiza para evento privado íntimo" loading="lazy" class="h-64 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+        </div>
+        <div class="p-6">
+          <h3 class="font-heading text-lg font-semibold text-white">Eventos Privados</h3>
+          <p class="mt-2 text-sm text-white/55">Reuniones exclusivas con menú personalizado y servicio discreto.</p>
+        </div>
+      </article>
+      <article class="reveal-card card-lift group overflow-hidden rounded-2xl bg-bg-black">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1700514077430-3659e38eb5e7?auto=format&fit=crop&w=1200&q=80" alt="Taquiza para evento masivo con gran cantidad de invitados" loading="lazy" class="h-64 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+        </div>
+        <div class="p-6">
+          <h3 class="font-heading text-lg font-semibold text-white">Eventos Masivos</h3>
+          <p class="mt-2 text-sm text-white/55">Logística de alto volumen sin sacrificar calidad ni tiempos.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-16 flex justify-center">
+      <a href="https://wa.me/526644375224" data-wa-msg="Hola, quiero hablar con un asesor sobre el servicio ideal para mi evento." class="js-wa-cta magnetic btn-premium" target="_blank" rel="noopener">Hablar con un Asesor</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section id="menu" class="container-px py-28 sm:py-36">
+  <div class="mb-16 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+    <div>
+      <p class="label-eyebrow mb-5">Nuestro menú</p>
+      <h2 class="font-heading max-w-xl text-4xl font-semibold leading-[1.05] tracking-[-0.02em] text-white sm:text-5xl">
+        Del trompo a la mesa.
+      </h2>
+    </div>
+    <p class="max-w-sm text-white/55">Carnes marinadas 24 horas, tortilla hecha en el momento y una barra de salsas que no se olvida.</p>
+  </div>
+
+  <div class="scrollbar-none flex gap-5 overflow-x-auto pb-6" id="menuScroller">
+    <div class="menu-card group relative min-w-[260px] flex-1 overflow-hidden rounded-2xl sm:min-w-[300px]">
+      <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1000&q=80" alt="Tacos al pastor con piña recién cortados del trompo" loading="lazy" class="h-96 w-full object-cover transition-transform duration-700 group-hover:scale-110">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+      <div class="absolute bottom-0 p-6"><h3 class="font-heading text-xl font-semibold text-white">Pastor</h3></div>
+    </div>
+    <div class="menu-card group relative min-w-[260px] flex-1 overflow-hidden rounded-2xl sm:min-w-[300px]">
+      <img src="https://images.unsplash.com/photo-1779414518295-b03b6c60921b?auto=format&fit=crop&w=1000&q=80" alt="Carne asada a la parrilla con llamas para tacos" loading="lazy" class="h-96 w-full object-cover transition-transform duration-700 group-hover:scale-110">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+      <div class="absolute bottom-0 p-6"><h3 class="font-heading text-xl font-semibold text-white">Asada</h3></div>
+    </div>
+    <div class="menu-card group relative min-w-[260px] flex-1 overflow-hidden rounded-2xl sm:min-w-[300px]">
+      <img src="https://images.unsplash.com/photo-1648437595587-e6a8b0cdf1f9?auto=format&fit=crop&w=1000&q=80" alt="Tacos de suadero dorándose en el comal" loading="lazy" class="h-96 w-full object-cover transition-transform duration-700 group-hover:scale-110">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+      <div class="absolute bottom-0 p-6"><h3 class="font-heading text-xl font-semibold text-white">Suadero</h3></div>
+    </div>
+    <div class="menu-card group relative min-w-[260px] flex-1 overflow-hidden rounded-2xl sm:min-w-[300px]">
+      <img src="https://images.unsplash.com/photo-1683062332605-4e1209d75346?auto=format&fit=crop&w=1000&q=80" alt="Birria de res estilo Tijuana servida con consomé" loading="lazy" class="h-96 w-full object-cover transition-transform duration-700 group-hover:scale-110">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+      <div class="absolute bottom-0 p-6"><h3 class="font-heading text-xl font-semibold text-white">Birria</h3></div>
+    </div>
+    <div class="menu-card group relative min-w-[260px] flex-1 overflow-hidden rounded-2xl sm:min-w-[300px]">
+      <img src="https://images.unsplash.com/photo-1596995804697-27d11d43652e?auto=format&fit=crop&w=1000&q=80" alt="Chorizo artesanal a la parrilla para tacos" loading="lazy" class="h-96 w-full object-cover transition-transform duration-700 group-hover:scale-110">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+      <div class="absolute bottom-0 p-6"><h3 class="font-heading text-xl font-semibold text-white">Chorizo</h3></div>
+    </div>
+    <div class="menu-card group relative min-w-[260px] flex-1 overflow-hidden rounded-2xl sm:min-w-[300px]">
+      <img src="https://images.unsplash.com/photo-1545093149-618ce3bcf49d?auto=format&fit=crop&w=1000&q=80" alt="Tacos de pollo marinado a la parrilla" loading="lazy" class="h-96 w-full object-cover transition-transform duration-700 group-hover:scale-110">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+      <div class="absolute bottom-0 p-6"><h3 class="font-heading text-xl font-semibold text-white">Pollo</h3></div>
+    </div>
+    <div class="menu-card group relative min-w-[260px] flex-1 overflow-hidden rounded-2xl sm:min-w-[300px]">
+      <img src="https://images.unsplash.com/photo-1504544750208-dc0358e63f7f?auto=format&fit=crop&w=1000&q=80" alt="Opción vegetariana de tacos con nopales y champiñones" loading="lazy" class="h-96 w-full object-cover transition-transform duration-700 group-hover:scale-110">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+      <div class="absolute bottom-0 p-6"><h3 class="font-heading text-xl font-semibold text-white">Vegetariano</h3></div>
+    </div>
+    <div class="menu-card group relative min-w-[260px] flex-1 overflow-hidden rounded-2xl sm:min-w-[300px]">
+      <img src="https://images.unsplash.com/photo-1680992071073-cb1696ba8d3e?auto=format&fit=crop&w=1000&q=80" alt="Barra de salsas, guacamole, frijoles, nopales, cebolla, cilantro y limones" loading="lazy" class="h-96 w-full object-cover transition-transform duration-700 group-hover:scale-110">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+      <div class="absolute bottom-0 p-6">
+        <h3 class="font-heading text-xl font-semibold text-white">Barra de Salsas</h3>
+        <p class="mt-1 text-xs text-white/60">Guacamole · Frijoles · Nopales · Cebolla · Cilantro · Limones</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-14 flex justify-center">
+    <a href="https://wa.me/526644375224" data-wa-msg="Hola, me interesa conocer el menu completo para mi evento." class="js-wa-cta magnetic btn-premium-outline" target="_blank" rel="noopener">Contactar Ahora</a>
+  </div>
+</section>
+
+<!-- ================= COMO TRABAJAMOS ================= -->
+<section id="proceso" class="border-t border-white/10 bg-carbon py-28 sm:py-36">
+  <div class="container-px">
+    <p class="label-eyebrow mb-5">Cómo trabajamos</p>
+    <h2 class="font-heading max-w-xl text-4xl font-semibold leading-[1.05] tracking-[-0.02em] text-white sm:text-5xl">
+      Cinco pasos, cero improvisación.
+    </h2>
+
+    <div class="mt-20 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5" id="timeline">
+      <div class="timeline-step relative pl-8 sm:pl-0">
+        <div class="font-heading text-5xl font-semibold text-white/15">01</div>
+        <div class="rule-gold my-5"></div>
+        <h3 class="font-heading text-lg font-semibold text-white">Agenda</h3>
+        <p class="mt-2 text-sm text-white/55">Nos escribes por WhatsApp y agendamos una llamada para conocer tu evento.</p>
+      </div>
+      <div class="timeline-step relative pl-8 sm:pl-0">
+        <div class="font-heading text-5xl font-semibold text-white/15">02</div>
+        <div class="rule-gold my-5"></div>
+        <h3 class="font-heading text-lg font-semibold text-white">Confirmación</h3>
+        <p class="mt-2 text-sm text-white/55">Definimos menú, invitados y fecha. Confirmamos con anticipo.</p>
+      </div>
+      <div class="timeline-step relative pl-8 sm:pl-0">
+        <div class="font-heading text-5xl font-semibold text-white/15">03</div>
+        <div class="rule-gold my-5"></div>
+        <h3 class="font-heading text-lg font-semibold text-white">Montaje</h3>
+        <p class="mt-2 text-sm text-white/55">Llegamos con anticipación para montar parrilla, barra y mobiliario.</p>
+      </div>
+      <div class="timeline-step relative pl-8 sm:pl-0">
+        <div class="font-heading text-5xl font-semibold text-white/15">04</div>
+        <div class="rule-gold my-5"></div>
+        <h3 class="font-heading text-lg font-semibold text-white">Servicio</h3>
+        <p class="mt-2 text-sm text-white/55">Cocinamos y servimos en vivo durante todo el evento.</p>
+      </div>
+      <div class="timeline-step relative pl-8 sm:pl-0">
+        <div class="font-heading text-5xl font-semibold text-white/15">05</div>
+        <div class="rule-gold my-5"></div>
+        <h3 class="font-heading text-lg font-semibold text-white">Limpieza</h3>
+        <p class="mt-2 text-sm text-white/55">Recogemos y dejamos el lugar impecable. Tú solo disfruta.</p>
+      </div>
+    </div>
+
+    <div class="mt-16 flex justify-center">
+      <a href="https://wa.me/526644375224" data-wa-msg="Hola, quiero reservar la fecha de mi evento." class="js-wa-cta magnetic btn-ember" target="_blank" rel="noopener">Reservar Fecha</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERIA ================= -->
+<section id="galeria" class="container-px py-28 sm:py-36">
+  <p class="label-eyebrow mb-5">Galería</p>
+  <h2 class="font-heading max-w-xl text-4xl font-semibold leading-[1.05] tracking-[-0.02em] text-white sm:text-5xl">
+    Momentos que hemos servido.
+  </h2>
+
+  <div class="masonry mt-16" id="galleryGrid">
+    <button class="gallery-item block w-full overflow-hidden rounded-xl" data-full="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80"><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80" alt="Boda de Ana y Luis con taquiza de autor en jardín de Tijuana" loading="lazy" class="w-full object-cover transition-transform duration-500 hover:scale-105"></button>
+    <button class="gallery-item block w-full overflow-hidden rounded-xl" data-full="https://images.unsplash.com/photo-1723240906605-1f0ed36b5efb?auto=format&fit=crop&w=1000&q=80"><img src="https://images.unsplash.com/photo-1723240906605-1f0ed36b5efb?auto=format&fit=crop&w=1000&q=80" alt="Trompo de pastor girando junto al fuego en evento nocturno" loading="lazy" class="w-full object-cover transition-transform duration-500 hover:scale-105"></button>
+    <button class="gallery-item block w-full overflow-hidden rounded-xl" data-full="https://images.unsplash.com/photo-1601039641847-7857b994d704?auto=format&fit=crop&w=1200&q=80"><img src="https://images.unsplash.com/photo-1601039641847-7857b994d704?auto=format&fit=crop&w=1200&q=80" alt="Mesa de guacamole y salsas frescas en montaje de banquete" loading="lazy" class="w-full object-cover transition-transform duration-500 hover:scale-105"></button>
+    <button class="gallery-item block w-full overflow-hidden rounded-xl" data-full="https://images.unsplash.com/photo-1470549584009-d347338fc0ff?auto=format&fit=crop&w=1200&q=80"><img src="https://images.unsplash.com/photo-1470549584009-d347338fc0ff?auto=format&fit=crop&w=1200&q=80" alt="Carne asada sobre parrilla con llamas altas" loading="lazy" class="w-full object-cover transition-transform duration-500 hover:scale-105"></button>
+    <button class="gallery-item block w-full overflow-hidden rounded-xl" data-full="https://images.unsplash.com/photo-1713153044710-84bd61346dcc?auto=format&fit=crop&w=1000&q=80"><img src="https://images.unsplash.com/photo-1713153044710-84bd61346dcc?auto=format&fit=crop&w=1000&q=80" alt="Chef preparando tacos en vivo para los invitados" loading="lazy" class="w-full object-cover transition-transform duration-500 hover:scale-105"></button>
+    <button class="gallery-item block w-full overflow-hidden rounded-xl" data-full="https://images.unsplash.com/photo-1695512937087-859dc39418bb?auto=format&fit=crop&w=1200&q=80"><img src="https://images.unsplash.com/photo-1695512937087-859dc39418bb?auto=format&fit=crop&w=1200&q=80" alt="Vapor subiendo de la parrilla durante el servicio en vivo" loading="lazy" class="w-full object-cover transition-transform duration-500 hover:scale-105"></button>
+    <button class="gallery-item block w-full overflow-hidden rounded-xl" data-full="https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?auto=format&fit=crop&w=1200&q=80"><img src="https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?auto=format&fit=crop&w=1200&q=80" alt="Recepción de boda al aire libre con catering mexicano" loading="lazy" class="w-full object-cover transition-transform duration-500 hover:scale-105"></button>
+    <button class="gallery-item block w-full overflow-hidden rounded-xl" data-full="https://images.unsplash.com/photo-1707604341704-74abdc25e52a?auto=format&fit=crop&w=1000&q=80"><img src="https://images.unsplash.com/photo-1707604341704-74abdc25e52a?auto=format&fit=crop&w=1000&q=80" alt="Tacos recién servidos en plato de barro tradicional" loading="lazy" class="w-full object-cover transition-transform duration-500 hover:scale-105"></button>
+    <button class="gallery-item block w-full overflow-hidden rounded-xl" data-full="https://images.unsplash.com/photo-1707421721958-6149d18db4c2?auto=format&fit=crop&w=1200&q=80"><img src="https://images.unsplash.com/photo-1707421721958-6149d18db4c2?auto=format&fit=crop&w=1200&q=80" alt="Pista de baile iluminada en fiesta de XV años con catering" loading="lazy" class="w-full object-cover transition-transform duration-500 hover:scale-105"></button>
+    <button class="gallery-item block w-full overflow-hidden rounded-xl" data-full="https://images.unsplash.com/photo-1486679679458-629f321a617c?auto=format&fit=crop&w=1000&q=80"><img src="https://images.unsplash.com/photo-1486679679458-629f321a617c?auto=format&fit=crop&w=1000&q=80" alt="Llamas de la parrilla al atardecer en evento al aire libre" loading="lazy" class="w-full object-cover transition-transform duration-500 hover:scale-105"></button>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="fixed inset-0 z-[90] hidden items-center justify-center bg-black/95 p-4 sm:p-10">
+  <button id="lightboxClose" aria-label="Cerrar" class="absolute right-5 top-5 z-10 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-white">✕</button>
+  <button id="lightboxPrev" aria-label="Anterior" class="absolute left-3 top-1/2 z-10 -translate-y-1/2 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-white sm:left-6">‹</button>
+  <button id="lightboxNext" aria-label="Siguiente" class="absolute right-3 top-1/2 z-10 -translate-y-1/2 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-white sm:right-6">›</button>
+  <img id="lightboxImg" src="" alt="" class="max-h-[85vh] max-w-[92vw] rounded-lg object-contain">
+</div>
+
+<!-- ================= OPINIONES ================= -->
+<section id="opiniones" class="border-t border-white/10 bg-carbon py-28 sm:py-36">
+  <div class="container-px">
+    <p class="label-eyebrow mb-5">Opiniones</p>
+    <h2 class="font-heading max-w-xl text-4xl font-semibold leading-[1.05] tracking-[-0.02em] text-white sm:text-5xl">
+      Lo que dicen quienes ya celebraron con nosotros.
+    </h2>
+
+    <div class="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" id="testimonialsGrid">
+      <div class="reveal-card glass rounded-2xl p-8">
+        <div class="mb-4 text-gold" aria-hidden="true">★★★★★</div>
+        <p class="text-white/75">"La taquiza fue el tema de la boda por semanas. El trompo al pastor en vivo fue un éxito total y el servicio, impecable de principio a fin."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="images/testimonial-1.jpg" alt="Retrato de Mariana Rosales, cliente" loading="lazy" class="h-11 w-11 rounded-full object-cover">
+          <div>
+            <p class="text-sm font-semibold text-white">Mariana Rosales</p>
+            <p class="text-xs text-white/50">Boda · Tijuana</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-card glass rounded-2xl p-8">
+        <div class="mb-4 text-gold" aria-hidden="true">★★★★★</div>
+        <p class="text-white/75">"Contratamos la taquiza para los XV de mi hija y superaron cada expectativa. Puntuales, limpios y con una sazón increíble."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="images/testimonial-2.jpg" alt="Retrato de Jorge Lizárraga, cliente" loading="lazy" class="h-11 w-11 rounded-full object-cover">
+          <div>
+            <p class="text-sm font-semibold text-white">Jorge Lizárraga</p>
+            <p class="text-xs text-white/50">XV Años · Rosarito</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-card glass rounded-2xl p-8">
+        <div class="mb-4 text-gold" aria-hidden="true">★★★★★</div>
+        <p class="text-white/75">"Para el evento anual de la empresa necesitábamos algo rápido y delicioso para 300 personas. Lo lograron sin ningún contratiempo."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="images/testimonial-3.jpg" alt="Retrato de Carla Villaseñor, cliente" loading="lazy" class="h-11 w-11 rounded-full object-cover">
+          <div>
+            <p class="text-sm font-semibold text-white">Carla Villaseñor</p>
+            <p class="text-xs text-white/50">Evento Corporativo · Mexicali</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-card glass rounded-2xl p-8">
+        <div class="mb-4 text-gold" aria-hidden="true">★★★★★</div>
+        <p class="text-white/75">"El cumpleaños de mi papá quedó grabado en la memoria de toda la familia. La birria estaba espectacular y el trato, muy cálido."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="images/testimonial-4.jpg" alt="Retrato de Alejandro Guzmán, cliente" loading="lazy" class="h-11 w-11 rounded-full object-cover">
+          <div>
+            <p class="text-sm font-semibold text-white">Alejandro Guzmán</p>
+            <p class="text-xs text-white/50">Cumpleaños · Ensenada</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-card glass rounded-2xl p-8">
+        <div class="mb-4 text-gold" aria-hidden="true">★★★★★</div>
+        <p class="text-white/75">"Muy profesionales desde la primera llamada por WhatsApp hasta el día del evento. La cotización fue clara y sin sorpresas."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="images/testimonial-5.jpg" alt="Retrato de Daniela Preciado, cliente" loading="lazy" class="h-11 w-11 rounded-full object-cover">
+          <div>
+            <p class="text-sm font-semibold text-white">Daniela Preciado</p>
+            <p class="text-xs text-white/50">Graduación · Tecate</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-card glass rounded-2xl p-8">
+        <div class="mb-4 text-gold" aria-hidden="true">★★★★★</div>
+        <p class="text-white/75">"Pedimos la opción vegetariana para varios invitados y quedaron encantados. Se nota que cuidan cada detalle del menú."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="images/testimonial-6.jpg" alt="Retrato de Sergio Ramírez, cliente" loading="lazy" class="h-11 w-11 rounded-full object-cover">
+          <div>
+            <p class="text-sm font-semibold text-white">Sergio Ramírez</p>
+            <p class="text-xs text-white/50">Evento Privado · Playas de Tijuana</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COBERTURA ================= -->
+<section id="cobertura" class="container-px py-28 sm:py-36">
+  <div class="grid gap-16 lg:grid-cols-12 lg:gap-12">
+    <div class="lg:col-span-5">
+      <p class="label-eyebrow mb-5">Zona de cobertura</p>
+      <h2 class="font-heading text-4xl font-semibold leading-[1.05] tracking-[-0.02em] text-white sm:text-5xl">
+        Llevamos el fuego a toda Baja California.
+      </h2>
+      <p class="mt-6 text-white/65">Cubrimos eventos en las principales ciudades de la región. Si tu evento está fuera de esta zona, escríbenos: seguro encontramos la forma.</p>
+      <a href="https://wa.me/526644375224" data-wa-msg="Hola, quiero confirmar si dan servicio de taquiza en mi ciudad." class="js-wa-cta magnetic btn-premium-outline mt-10 inline-flex" target="_blank" rel="noopener">Contactar Ahora</a>
+    </div>
+    <div class="lg:col-span-7">
+      <div class="grid grid-cols-2 gap-4 sm:grid-cols-3" id="coverageList">
+        <div class="coverage-item glass rounded-xl p-6">
+          <div class="rule-gold mb-4"></div>
+          <h3 class="font-heading text-base font-semibold text-white">Tijuana</h3>
+          <p class="mt-1 text-xs text-white/45">Cobertura total</p>
+        </div>
+        <div class="coverage-item glass rounded-xl p-6">
+          <div class="rule-gold mb-4"></div>
+          <h3 class="font-heading text-base font-semibold text-white">Playas de Tijuana</h3>
+          <p class="mt-1 text-xs text-white/45">Cobertura total</p>
+        </div>
+        <div class="coverage-item glass rounded-xl p-6">
+          <div class="rule-gold mb-4"></div>
+          <h3 class="font-heading text-base font-semibold text-white">Rosarito</h3>
+          <p class="mt-1 text-xs text-white/45">Cobertura total</p>
+        </div>
+        <div class="coverage-item glass rounded-xl p-6">
+          <div class="rule-gold mb-4"></div>
+          <h3 class="font-heading text-base font-semibold text-white">Tecate</h3>
+          <p class="mt-1 text-xs text-white/45">Cobertura total</p>
+        </div>
+        <div class="coverage-item glass rounded-xl p-6">
+          <div class="rule-gold mb-4"></div>
+          <h3 class="font-heading text-base font-semibold text-white">Ensenada</h3>
+          <p class="mt-1 text-xs text-white/45">Bajo cita previa</p>
+        </div>
+        <div class="coverage-item glass rounded-xl p-6">
+          <div class="rule-gold mb-4"></div>
+          <h3 class="font-heading text-base font-semibold text-white">Mexicali</h3>
+          <p class="mt-1 text-xs text-white/45">Bajo cita previa</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="border-t border-white/10 bg-carbon py-28 sm:py-36">
+  <div class="container-px">
+    <div class="grid gap-16 lg:grid-cols-12">
+      <div class="lg:col-span-4">
+        <p class="label-eyebrow mb-5">Preguntas frecuentes</p>
+        <h2 class="font-heading text-4xl font-semibold leading-[1.05] tracking-[-0.02em] text-white sm:text-5xl">
+          Todo lo que necesitas saber.
+        </h2>
+        <a href="https://wa.me/526644375224" data-wa-msg="Hola, tengo una pregunta que no encontre en su sitio." class="js-wa-cta magnetic btn-premium-outline mt-10 inline-flex" target="_blank" rel="noopener">Hablar con un Asesor</a>
+      </div>
+      <div class="lg:col-span-8" id="faqList">
+        <div class="faq-item">
+          <button class="faq-trigger flex w-full items-center justify-between gap-6 py-6 text-left">
+            <span class="font-heading text-base font-semibold text-white sm:text-lg">¿Con cuánta anticipación debo reservar?</span>
+            <span class="faq-icon shrink-0 text-xl text-gold">+</span>
+          </button>
+          <div class="faq-panel">
+            <p class="pb-6 text-white/60">Recomendamos reservar con al menos 3 a 4 semanas de anticipación. Para fechas en temporada alta (mayo-agosto y diciembre) sugerimos hacerlo con 2 meses de margen.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger flex w-full items-center justify-between gap-6 py-6 text-left">
+            <span class="font-heading text-base font-semibold text-white sm:text-lg">¿Cuál es el mínimo de invitados?</span>
+            <span class="faq-icon shrink-0 text-xl text-gold">+</span>
+          </button>
+          <div class="faq-panel">
+            <p class="pb-6 text-white/60">Nuestro mínimo es de 40 invitados. Para grupos más pequeños, contáctanos y buscamos una alternativa personalizada.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger flex w-full items-center justify-between gap-6 py-6 text-left">
+            <span class="font-heading text-base font-semibold text-white sm:text-lg">¿En qué zonas dan servicio?</span>
+            <span class="faq-icon shrink-0 text-xl text-gold">+</span>
+          </button>
+          <div class="faq-panel">
+            <p class="pb-6 text-white/60">Cubrimos Tijuana, Playas de Tijuana, Rosarito y Tecate de forma regular, y Ensenada y Mexicali bajo cita previa. Consulta disponibilidad para otras ubicaciones.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger flex w-full items-center justify-between gap-6 py-6 text-left">
+            <span class="font-heading text-base font-semibold text-white sm:text-lg">¿Qué incluye el servicio?</span>
+            <span class="faq-icon shrink-0 text-xl text-gold">+</span>
+          </button>
+          <div class="faq-panel">
+            <p class="pb-6 text-white/60">Incluye parrilla, chef y equipo de servicio, barra de salsas, tortillas hechas al momento, mobiliario de la estación y limpieza posterior al evento. Menaje y mobiliario para invitados se cotiza aparte.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger flex w-full items-center justify-between gap-6 py-6 text-left">
+            <span class="font-heading text-base font-semibold text-white sm:text-lg">¿Cuánto tiempo toma el montaje?</span>
+            <span class="faq-icon shrink-0 text-xl text-gold">+</span>
+          </button>
+          <div class="faq-panel">
+            <p class="pb-6 text-white/60">El montaje toma entre 60 y 90 minutos dependiendo del tamaño del evento. Llegamos con tiempo suficiente para estar listos antes de la hora acordada.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger flex w-full items-center justify-between gap-6 py-6 text-left">
+            <span class="font-heading text-base font-semibold text-white sm:text-lg">¿Qué formas de pago aceptan?</span>
+            <span class="faq-icon shrink-0 text-xl text-gold">+</span>
+          </button>
+          <div class="faq-panel">
+            <p class="pb-6 text-white/60">Aceptamos transferencia bancaria, depósito y tarjeta. Solicitamos un anticipo del 50% para confirmar la fecha y el saldo restante el día del evento.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger flex w-full items-center justify-between gap-6 py-6 text-left">
+            <span class="font-heading text-base font-semibold text-white sm:text-lg">¿Tienen opciones vegetarianas o para alergias?</span>
+            <span class="faq-icon shrink-0 text-xl text-gold">+</span>
+          </button>
+          <div class="faq-panel">
+            <p class="pb-6 text-white/60">Sí, contamos con opción vegetariana y podemos adaptar el menú para alergias o restricciones alimentarias avisando con anticipación.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger flex w-full items-center justify-between gap-6 py-6 text-left">
+            <span class="font-heading text-base font-semibold text-white sm:text-lg">¿Qué pasa si llueve el día del evento?</span>
+            <span class="faq-icon shrink-0 text-xl text-gold">+</span>
+          </button>
+          <div class="faq-panel">
+            <p class="pb-6 text-white/60">Nuestro equipo trabaja con carpas y protección para la estación de cocina. Te recomendamos tener un espacio techado de respaldo para los invitados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COTIZADOR ================= -->
+<section id="cotizador" class="border-t border-white/10 bg-carbon py-28 sm:py-36">
+  <div class="container-px">
+    <div class="mb-16 text-center">
+      <p class="label-eyebrow mb-5 justify-center">Cotizador automático</p>
+      <h2 class="font-heading mx-auto max-w-2xl text-4xl font-semibold leading-[1.05] tracking-[-0.02em] text-white sm:text-5xl">
+        Calcula el estimado de tu taquiza en segundos.
+      </h2>
+    </div>
+
+    <div class="mx-auto grid max-w-5xl gap-10 rounded-3xl border border-white/10 bg-bg-black p-8 lg:grid-cols-2 lg:p-14">
+      <form id="quoteForm" class="space-y-7">
+        <div>
+          <label class="field-label" for="qEventType">Tipo de evento</label>
+          <select id="qEventType" class="field-input">
+            <option value="Boda">Boda</option>
+            <option value="XV Años">XV Años</option>
+            <option value="Evento Corporativo">Evento Corporativo</option>
+            <option value="Cumpleaños">Cumpleaños</option>
+            <option value="Graduación">Graduación</option>
+            <option value="Bautizo">Bautizo</option>
+            <option value="Evento Privado">Evento Privado</option>
+            <option value="Evento Masivo">Evento Masivo</option>
+          </select>
+        </div>
+        <div>
+          <label class="field-label" for="qGuests">Número de invitados: <span id="qGuestsValue" class="text-gold">80</span></label>
+          <input type="range" id="qGuests" class="range-premium w-full" min="40" max="500" step="10" value="80">
+        </div>
+        <div>
+          <label class="field-label" for="qCity">Ciudad</label>
+          <select id="qCity" class="field-input">
+            <option value="Tijuana">Tijuana</option>
+            <option value="Playas de Tijuana">Playas de Tijuana</option>
+            <option value="Rosarito">Rosarito</option>
+            <option value="Tecate">Tecate</option>
+            <option value="Ensenada">Ensenada</option>
+            <option value="Mexicali">Mexicali</option>
+          </select>
+        </div>
+        <div>
+          <label class="field-label" for="qDate">Fecha del evento</label>
+          <input type="date" id="qDate" class="field-input">
+        </div>
+        <div>
+          <label class="field-label" for="qTier">Nivel de servicio</label>
+          <select id="qTier" class="field-input">
+            <option value="Clásico">Clásico</option>
+            <option value="Premium">Premium</option>
+            <option value="Deluxe">Deluxe</option>
+          </select>
+        </div>
+      </form>
+
+      <div class="flex flex-col justify-between rounded-2xl bg-carbon p-8">
+        <div>
+          <p class="label-eyebrow mb-3">Estimado de tu evento</p>
+          <div class="font-heading text-5xl font-semibold text-white" id="qResult">$0 MXN</div>
+          <p class="mt-2 text-xs text-white/40">Estimado, sujeto a confirmación. El precio final depende de menú, ubicación exacta y logística.</p>
+          <div class="mt-8 space-y-2 text-sm text-white/60" id="qBreakdown"></div>
+        </div>
+        <a href="https://wa.me/526644375224" id="qCta" data-wa-msg="" class="js-wa-cta magnetic btn-ember mt-10 w-full justify-center" target="_blank" rel="noopener">
+          Solicitar Cotización
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section id="contacto" class="container-px py-28 sm:py-36">
+  <div class="grid gap-16 lg:grid-cols-12 lg:gap-12">
+    <div class="lg:col-span-5">
+      <p class="label-eyebrow mb-5">Contacto</p>
+      <h2 class="font-heading text-4xl font-semibold leading-[1.05] tracking-[-0.02em] text-white sm:text-5xl">
+        Cuéntanos de tu evento.
+      </h2>
+      <p class="mt-6 text-white/65">Completa el formulario y te contactaremos por WhatsApp con tu cotización personalizada en menos de 24 horas.</p>
+      <div class="mt-10 space-y-4 text-sm text-white/55">
+        <p>Teléfono / WhatsApp: <a href="tel:+526644375224" class="text-white hover:text-gold">+52 664 437 5224</a></p>
+        <p>Ciudades de cobertura: Tijuana, Mexicali, Ensenada, Rosarito, Tecate</p>
+      </div>
+    </div>
+
+    <div class="lg:col-span-7">
+      <form id="contactForm" class="grid grid-cols-1 gap-6 sm:grid-cols-2" novalidate>
+        <div>
+          <label class="field-label" for="cName">Nombre*</label>
+          <input required type="text" id="cName" name="cName" class="field-input" placeholder="Tu nombre completo">
+          <p class="field-error mt-1 hidden text-xs text-ember">Por favor ingresa tu nombre.</p>
+        </div>
+        <div>
+          <label class="field-label" for="cPhone">Teléfono*</label>
+          <input required type="tel" id="cPhone" name="cPhone" class="field-input" placeholder="664 000 0000">
+          <p class="field-error mt-1 hidden text-xs text-ember">Por favor ingresa un teléfono válido.</p>
+        </div>
+        <div>
+          <label class="field-label" for="cEmail">Correo*</label>
+          <input required type="email" id="cEmail" name="cEmail" class="field-input" placeholder="tu@correo.com">
+          <p class="field-error mt-1 hidden text-xs text-ember">Por favor ingresa un correo válido.</p>
+        </div>
+        <div>
+          <label class="field-label" for="cDate">Fecha del evento</label>
+          <input type="date" id="cDate" name="cDate" class="field-input">
+        </div>
+        <div>
+          <label class="field-label" for="cGuests">Número de invitados</label>
+          <input type="number" min="1" id="cGuests" name="cGuests" class="field-input" placeholder="Ej. 120">
+        </div>
+        <div>
+          <label class="field-label" for="cType">Tipo de evento</label>
+          <select id="cType" name="cType" class="field-input">
+            <option value="Boda">Boda</option>
+            <option value="XV Años">XV Años</option>
+            <option value="Evento Corporativo">Evento Corporativo</option>
+            <option value="Cumpleaños">Cumpleaños</option>
+            <option value="Graduación">Graduación</option>
+            <option value="Bautizo">Bautizo</option>
+            <option value="Evento Privado">Evento Privado</option>
+            <option value="Evento Masivo">Evento Masivo</option>
+          </select>
+        </div>
+        <div class="sm:col-span-2">
+          <label class="field-label" for="cLocation">Ubicación</label>
+          <input type="text" id="cLocation" name="cLocation" class="field-input" placeholder="Ciudad / colonia / salón">
+        </div>
+        <div class="sm:col-span-2">
+          <label class="field-label" for="cMessage">Mensaje</label>
+          <textarea id="cMessage" name="cMessage" rows="3" class="field-input" placeholder="Cuéntanos más sobre tu evento"></textarea>
+        </div>
+        <div class="sm:col-span-2">
+          <button type="submit" class="js-wa-cta btn-premium w-full sm:w-auto">Contáctanos</button>
+          <p id="formConfirmation" class="mt-4 hidden text-sm text-gold">¡Gracias! Se abrió WhatsApp con tu mensaje listo para enviar.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="border-t border-white/10 bg-carbon">
+  <div class="container-px py-16">
+    <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <div class="font-heading text-lg font-semibold text-white">TAQUIZAS<span class="text-gold">.</span></div>
+        <p class="mt-4 text-sm text-white/50">Taquizas para eventos en Tijuana y Baja California. Fuego, sabor y precisión desde 2013.</p>
+      </div>
+      <div>
+        <p class="mb-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/40">Navegación</p>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li><a class="hover:text-gold" href="#servicios">Servicios</a></li>
+          <li><a class="hover:text-gold" href="#menu">Menú</a></li>
+          <li><a class="hover:text-gold" href="#galeria">Galería</a></li>
+          <li><a class="hover:text-gold" href="#cotizador">Cotizador</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mb-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/40">Cobertura</p>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li>Tijuana</li>
+          <li>Mexicali</li>
+          <li>Ensenada</li>
+          <li>Rosarito · Tecate</li>
+        </ul>
+      </div>
+      <div>
+        <p class="mb-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/40">Contacto</p>
+        <p class="text-sm text-white/60">Tel: <a href="tel:+526644375224" class="hover:text-gold">+52 664 437 5224</a></p>
+        <a href="https://wa.me/526644375224" data-wa-msg="Hola, quiero reservar la fecha de mi evento." class="js-wa-cta magnetic btn-premium mt-6 inline-flex" target="_blank" rel="noopener">Reservar Fecha</a>
+      </div>
+    </div>
+    <div class="mt-14 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/35 sm:flex-row sm:items-center">
+      <p>© <span id="year"></span> Taquizas para Eventos. Todos los derechos reservados.</p>
+      <p>Sitio diseñado para reservar tu próximo evento en segundos.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= FLOATING CTA ================= -->
+<a href="https://wa.me/526644375224" data-wa-msg="Hola, quiero cotizar mi evento." id="floatCta" class="js-wa-cta btn-float" target="_blank" rel="noopener">
+  Cotizar mi Evento
+  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+</a>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/vendor/lenis.min.js"></script>
+<script src="js/vendor/split-type.min.js"></script>
+<script src="js/main.js" defer></script>
+<script src="js/lenis-init.js" defer></script>
+<script src="js/cursor.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/gallery.js" defer></script>
+<script src="js/quote-calculator.js" defer></script>
+</body>
+</html>
