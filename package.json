@@ -1,0 +1,18 @@
+{
+  "name": "taquizas-para-eventos",
+  "version": "1.0.0",
+  "description": "Sitio de una sola pagina para Taquizas para Eventos (Tijuana, Baja California).",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/input.css -o ./css/style.css --minify",
+    "watch:css": "tailwindcss -i ./css/input.css -o ./css/style.css --watch",
+    "serve": "npx --yes serve -l 5173 ."
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "keywords": ["taquizas", "catering", "eventos", "tijuana"],
+  "author": "",
+  "license": "UNLICENSED",
+  "note": "js/vendor/*.min.js (gsap, ScrollTrigger, lenis, split-type) and css/fonts/*.woff2 (Bricolage Grotesque, Manrope, Inter) are self-hosted, versioned copies pulled from npm at build time -- no runtime CDN dependency. If node_modules/ exists in this folder it is leftover local tooling and is not referenced by index.html; it is safe to delete."
+}
